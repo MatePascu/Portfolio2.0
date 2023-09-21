@@ -5,7 +5,7 @@ let navLinks = document.querySelectorAll('header nav a')
 window.onscroll = () =>{
   sections.forEach(sec => {
     let top = window.scrollY
-    let offset = sec.offsetTop - 100 // offsetTop: Retorna la distancia del elemento actual respecto al borde superior del nodo
+    let offset = sec.offsetTop - 150 // offsetTop: Retorna la distancia del elemento actual respecto al borde superior del nodo
     let height = sec.offsetHeight // offsetHeight: Devuelve el alto de un elemento
     let id = sec.getAttribute('id')
 
@@ -15,6 +15,12 @@ window.onscroll = () =>{
         links.classList.remove('active')
         document.querySelector('header nav a[href*=' + id + ']').classList.add('active')
       })
+      // Active section for animation scroll
+      sec.classList.add('show-animate')
+    }
+    // For repeat on scroll
+    else{
+      sec.classList.remove('show-animate')
     }
   })
   // Header BackGround
@@ -24,6 +30,10 @@ window.onscroll = () =>{
   // Remove toggle icon and navbar when click navbar links (scroll)
   menuIcon.classList.remove('bx-x')
   navbar.classList.remove('active')
+
+  // Animation footer on scroll
+  let footer = document.querySelector('footer')
+  footer.classList.toggle('show-animate', this.innerHeight + this.scrollY >= document.scrollingElement.scrollHeight)
 }
 
 // Toggle Icon Navbar
