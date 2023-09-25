@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio</title>
+  <link rel="icon" href="images/portfolio.png">
 
   <link rel="stylesheet" href="css/style.css">
   <!-- Box icons -->
@@ -91,18 +92,97 @@
     </div>
   </section>
 
+  <!-- proyects section -->
+  <section class="proyects" id="proyects">
+    <h2 class="heading">
+      <span>P</span>royectos <span class="animate scroll" style="--i:1;"></span>
+    </h2>
+
+    <div class="proyects-row">
+
+      <div class="proyect-box">
+        <img src="images/tienda.jpg" alt="Tienda virtual">
+        <h4 class="proyect-name">Tienda Virtual</h4>
+        <p class="proyect-description">Tienda virtual con paypal integrado (En modo sanbox para que cualquiera pueda probarlo). Usuario cliente: hr@mail.com ; Contraseña: 123456</p>
+
+        <div class="btn-box btns">
+          <a href="https://tienda-abell.000webhostapp.com/" class="btn" target="_blank">Ver sitio web</a>
+        </div>
+      </div>
+
+      <div class="proyect-box">
+        <img src="images/Inmo.jpg" alt="Inmobiliaria">
+        <h4 class="proyect-name">Inmobiliaria</h4>
+        <p class="proyect-description">Página de inmobiliaria "Alfonsina Grand Propiedades". <br> Página para visualizar propiedades</p>
+
+        <div class="btn-box btns">
+          <a href="https://inmo-agp.netlify.app" class="btn" target="_blank">Ver sitio web</a>
+        </div>
+      </div>
+
+      <div class="proyect-box">
+        <img src="images/Cactus.jpg" alt="Proyecto">
+        <h4 class="proyect-name">Complejo cabañas</h4>
+        <p class="proyect-description">Complejo de cabañas "Los Cactus"</p>
+
+        <div class="btn-box btns">
+          <a href="https://complejoloscactus.com.ar/" class="btn" target="_blank">Ver sitio web</a>
+        </div>
+      </div>
+
+      <span class="animate scroll" style="--i:3;"></span>
+    </div>
+
+    <div class="proyects-row">
+
+      <div class="proyect-box">
+        <img src="images/admin.jpg" alt="Proyecto">
+        <h4 class="proyect-name">Administrador tienda</h4>
+        <p class="proyect-description">Permite crear/editar/borrar productos/categorias/pedidos/roles y mas. Usuario supervisor: alex@mail.com ; Contraseña: 123456</p>
+
+        <div class="btn-box btns">
+          <a href="https://tienda-abell.000webhostapp.com/login" class="btn" target="_blank">Ver sitio web</a>
+        </div>
+      </div>
+
+      <div class="proyect-box">
+        <img src="images/ColorGame.jpg" alt="Proyecto">
+        <h4 class="proyect-name">Color Game</h4>
+        <p class="proyect-description">Juego donde tienes que adivinar el color dado en formato RGB.</p>
+
+        <div class="btn-box btns">
+          <a href="https://colorgameguess.netlify.app" class="btn" target="_blank">Ver sitio web</a>
+        </div>
+      </div>
+
+      <div class="proyect-box">
+        <img src="images/PP.jpg" alt="Proyecto">
+        <h4 class="proyect-name">Pasantía</h4>
+        <p class="proyect-description">Video explicando el proyecto realizado en la pasantía.</p>
+
+        <div class="btn-box btns">
+          <a href="#" class="btn" target="_blank">Ver video</a>
+        </div>
+      </div>
+
+      <span class="animate scroll" style="--i:5;"></span>
+    </div>
+
+    <div></div>
+  </section>
+
   <!-- Contact section -->
   <section class="contact" id="contact">
     <h2 class="heading">Contact <span>Me!</span> <span class="animate scroll" style="--i:1;"></span> </h2>
 
-    <form action="#">
+    <form action="https://formsubmit.co/5d61026d66701414ba2c17f78698848f" method="post">
       <div class="input-box">
         <div class="input-field">
-          <input type="text" placeholder="Nombre Completo" required>
+          <input type="text" placeholder="Nombre Completo" name="Nombre" required>
           <span class="focus"></span>
         </div>
         <div class="input-field">
-          <input type="text" placeholder="Email" required>
+          <input type="text" placeholder="Email" name="Email" required>
           <span class="focus"></span>
         </div>
 
@@ -111,11 +191,11 @@
 
       <div class="input-box">
         <div class="input-field">
-          <input type="number" placeholder="Telefono" required>
+          <input type="number" placeholder="Telefono" name="Telefono" required>
           <span class="focus"></span>
         </div>
         <div class="input-field">
-          <input type="text" placeholder="Asunto Email" required>
+          <input type="text" placeholder="Asunto Email" name="Asunto" required>
           <span class="focus"></span>
         </div>
 
@@ -123,7 +203,7 @@
       </div>
 
       <div class="textarea-field">
-        <textarea name="" id="" cols="100" rows="6" placeholder="Mensaje" required></textarea>
+        <textarea cols="100" rows="6" placeholder="Mensaje" name="Mensaje" required></textarea>
         <span class="focus"></span>
 
         <span class="animate scroll" style="--i:7;"></span>
