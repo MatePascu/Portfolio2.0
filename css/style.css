@@ -357,6 +357,71 @@ section{
   background: var(--second-bg-color);
 }
 
+.skills{
+  padding: 8rem 9%;
+}
+
+.skills-content{
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.skills-box{
+  width: 45%;
+  padding: 2rem 4rem;
+  border: .2rem solid var(--main-color);
+  border-radius: 2rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.skills-box::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: var(--second-bg-color);
+  z-index: -1;
+  transition: .5s;
+}
+
+.skills-box:hover::before{
+  width: 100%;
+}
+
+.skills-box h3{
+  font-size: 3rem;
+  text-align: center;
+}
+
+.box-row{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3rem;
+}
+
+.skill{
+  display: flex;
+  width: 140px;
+}
+
+.skill i{
+  font-size: 50px;
+}
+
+.skill p{
+  margin-left: 1rem;
+  margin-top: .4rem;
+  font-size: 14px;
+}
+
+.skill p span{
+  font-weight: 800;
+}
+
 .proyects{
   width: 100%;
   padding: 8rem 9%;
@@ -603,6 +668,7 @@ section{
 }
 
 .about.show-animate .animate.scroll,
+.skills.show-animate .animate.scroll,
 .proyects.show-animate .animate.scroll,
 .contact.show-animate .animate.scroll,
 .footer.show-animate .animate.scroll{
@@ -709,6 +775,16 @@ section{
 /*   .home-content .text-animate{
     width: 32.8rem;
   } */
+
+  .skills-content{
+    display: block;
+  }
+
+  .skills-box{
+    width: 100%;
+    padding: 2rem 2rem;
+    margin-bottom: 2rem;
+  }
 
   .proyects-row{
     display: flex;

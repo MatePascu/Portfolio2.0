@@ -44,3 +44,18 @@ menuIcon.onclick = () => {
   menuIcon.classList.toggle('bx-x')
   navbar.classList.toggle('active')
 }
+
+// Skills icons animation
+let skillsIcons = document.querySelectorAll('.skill i')
+
+skillsIcons.forEach(icon => {
+  icon.addEventListener("mouseover", function(){
+    icon.classList.add('bx-tada')
+
+    let milliseconds = 1500;
+
+    setTimeout(function() {
+      icon.classList.remove('bx-tada')
+    }, milliseconds);
+    })
+})
