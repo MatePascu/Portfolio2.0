@@ -65,3 +65,6 @@ let modal = document.querySelector('.modal')
 function openModal(){
   modal.showModal()
 }
+function closeModal(){
+  modal.close()
+}

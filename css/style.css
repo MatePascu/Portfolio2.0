@@ -488,11 +488,16 @@ section{
   bottom: 0rem;
 }
 
+.proyects-row .btn{
+  cursor: pointer;
+}
+
 .modal{
   z-index: 100;
   margin: auto;
-  width: 500px;
-  height: 450px;
+  width: 700px;
+  height: 560px;
+  overflow: hidden;
 }
 
 .modal::backdrop{
@@ -501,7 +506,7 @@ section{
 
 .bar{
   height: 35px;
-  background: var(--second-bg-color);
+  background: black;
 }
 
 .close{
@@ -510,6 +515,10 @@ section{
   top: 10px;
   width: 20px;
   cursor: pointer;
+  background: black;
+  color: var(--text-color);
+  font-size: 2rem;
+  font-weight: 700;
 }
 
 .contact{
@@ -818,6 +827,16 @@ section{
   .proyect-box{
     margin: 1rem 0;
     width: 35rem;
+  }
+
+  iframe{
+    width: 314px;
+    height: 233px;
+  }
+  
+  .modal{
+    width: 314px;
+    height: 233px
   }
 }
 
