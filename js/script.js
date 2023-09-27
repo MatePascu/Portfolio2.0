@@ -59,3 +59,9 @@ skillsIcons.forEach(icon => {
     }, milliseconds);
     })
 })
+
+// Modal video
+let modal = document.querySelector('.modal')
+function openModal(){
+  modal.showModal()
+}

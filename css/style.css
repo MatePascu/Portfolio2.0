@@ -488,6 +488,30 @@ section{
   bottom: 0rem;
 }
 
+.modal{
+  z-index: 100;
+  margin: auto;
+  width: 500px;
+  height: 450px;
+}
+
+.modal::backdrop{
+  background-color: rgb(0, 0, 0, .5);
+}
+
+.bar{
+  height: 35px;
+  background: var(--second-bg-color);
+}
+
+.close{
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  width: 20px;
+  cursor: pointer;
+}
+
 .contact{
   min-height: auto;
   padding-bottom: 7rem;
@@ -793,6 +817,7 @@ section{
 
   .proyect-box{
     margin: 1rem 0;
+    width: 35rem;
   }
 }
 
